@@ -1,4 +1,4 @@
-# myfeedapp
+# Feed App
 
 A new Flutter project.
 
