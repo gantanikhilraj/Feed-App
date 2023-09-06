@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:myfeedapp/database/db.dart';
 
-class HomeScreen extends StatefulWidget {
+class InputScreen extends StatefulWidget {
   static const String id = 'HomeScreen';
-  const HomeScreen({super.key});
+  const InputScreen({super.key});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _InputScreenState createState() => _InputScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _InputScreenState extends State<InputScreen> {
   final titleController = TextEditingController();
   final descriptionController = TextEditingController();
 
@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ..showSnackBar(const SnackBar(content: Text('Fill in all fields')));
       return;
     }
-    craeteUser(name: title, description: des);
+    createUser(name: title, description: des);
     titleController.clear();
     descriptionController.clear();
     Navigator.pop(context);

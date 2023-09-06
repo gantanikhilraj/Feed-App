@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const DisplayData(),
       routes: {
-        HomeScreen.id: (context) => const HomeScreen(),
+        InputScreen.id: (context) => const InputScreen(),
         DisplayData.id: (context) => const DisplayData(),
       },
     );

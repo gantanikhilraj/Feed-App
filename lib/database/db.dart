@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:myfeedapp/model/model.dart';
 
-Future craeteUser({required String name, required String description}) async {
+Future createUser({required String name, required String description}) async {
   final docuser = FirebaseFirestore.instance.collection('users').doc();
   final user = User(
     id: docuser.id,
